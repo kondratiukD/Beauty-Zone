@@ -71,7 +71,7 @@
         <div class="container">
           <p class="hero-item">Косметологічна клініка</p>
           <h1 class="hero-title">Beauty Zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
           <p class="text-button">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -85,51 +85,54 @@
                 Перевтілюйтесь в <span class="accent">beauty zone!</span>
               </h2>
               <p class="about-item">
-                Наша косметологічна клініка пропонує вам професійні послуги з
+                Наша косметологічна клініка пропонує вам професійні послуги <br> з
                 догляду за шкірою обличчя та тіла.
               </p>
               <p class="about-item">
                 B <span>beauty zone</span> ми гарантуємо найвищі стандарти
-                якості та приємний сервіс. Наші косметологічні процедури та
-                препарати допоможуть вам підтримувати свою красу та молодість. З
+                якості <br> та приємний сервіс. Наші косметологічні процедури та
+                препарати <br> допоможуть вам підтримувати свою красу та молодість. <br> З
                 нами краса назавжди!
               </p>
-            </div>
           </div>
           <div class="about-images">
-            <ul>
-              <li>
+            <ul class="about-list">
+              <li class="about-item first">
                 <img
                   src="./images/Результат ДО.jpg"
                   alt="Фото жінки ДО процедури"
                 />
               </li>
-              <li>
+              <li class="about-item second">
                 <img
                   src="./images/Результат ПІСЛЯ.jpg"
                   alt="Фото жінки ПІСЛЯ процедури"
                 />
               </li>
               <li>
-                <img src="./images/Star-dark-color.svg" alt="Star dark color" />
+                <svg class="about-icon-dark" width="64" height="64">
+                  <use href="./images/svg-sprite.svg#icon-Star-dark-color"></use>
+                </svg>
               </li>
               <li>
-                <img
-                  src="./images/Star-light-color.svg"
-                  alt="Star light color"
-                />
+                <svg class="about-icon-light" width="40" height="40">
+                  <use href="./images/svg-sprite.svg#icon-Star-light-color"></use>
+                </svg>
               </li>
               <li>
-                <img src="./images/Star-mini.svg" alt="Star mini" />
+                <svg class="about-icon-mini" width="16" height="16">
+                  <use href="./images/svg-sprite.svg#icon-Star-mini"></use>
+                </svg>
               </li>
             </ul>
+          </div>
           </div>
         </div>
       </section>
       <section class="advantages-section" id="advantages-section">
         <div class="container">
           <h2 class="section advantages-title">
-            Чому люди <span class="accent">обирають нас</span>
+            Чому люди <br> <span class="accent">обирають нас</span>
           </h2>
           <div class="advantages-content">
             <ul class="advantages-item">
@@ -163,7 +166,7 @@
                 <article class="advantages-card">
                   <svg class="advantages-icon" width="48" height="48">
                     <use
-                      href="./images/svg-sprite.svg#icon-section-3---1-logo"
+                      href="./images/svg-sprite.svg#icon-section-3--3-logo"
                     ></use>
                   </svg>
                   <h4 class="advantages-list">
@@ -221,19 +224,36 @@
             <iframe
               class="iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4762962473333!2d30.770370054752874!3d50.50670401032495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LsuLCDQo9C60YDQsNGX0L3QsCwgMDc0MDA!5e0!3m2!1suk!2sus!4v1707686487703!5m2!1suk!2sus"
-              width="600"
-              height="450"
+              width="604"
+              height="481"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="contact-form">
-              <p>
-                Запишіться <span class="accent">безкоштовно</span> та отримайте
-                подарунок
-              </p>
-              <!-- form -->
+            <div class="contact-format">
+                <h2 class="contact-item">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</h2>
+                <form name="contact-form" autocomplete="off">
+                  <div class="contact-field">
+                    <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ваше ім'я та прізвище" required />
+                  </div>
+        
+                  <div class="contact-field">
+                    <label class="form-label visually-hidden" for="user-tel">Ваш номер телефону</label>
+                    <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Ваш номер телефону" required />
+                  </div>
+        
+                  <div class="contact-field">
+                    <label class="form-label visually-hidden" for="user-email">Ваша електронна пошта</label>
+                    <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Ваша електронна пошта" required />
+                  </div>
+        
+                  <button class="form-button button" type="submit">Записатись безкоштовно</button>
+                  <p class="form-terms">
+                    Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+                  </p>
+                </form>
             </div>
           </div>
         </div>
@@ -320,5 +340,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden ">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p class="form-item">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+            <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ваше ім'я та прізвище" required />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel">Ваш номер телефону</label>
+            <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Ваш номер телефону" required />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">Ваша електронна пошта</label>
+            <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Ваша електронна пошта" required />
+          </div>
+
+          <button class="form-button button" type="submit">Записатись безкоштовно</button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
