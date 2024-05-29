@@ -1,0 +1,90 @@
+.hero-section {
+  margin-bottom: 0;
+  background-image: 
+    url('/images/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 195px;
+    padding-left: 106px;
+    margin-bottom: 46px;
+    height: 657.92px;
+    background-position: center top;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    background-image: 
+    url('/images/hero-section-background@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  
+  &__container {
+    padding: 140px 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    font-size: 12px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    color: var(--color-brand-light);
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 0.8;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 529px;
+      font-size: 140px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+    padding: 16px 24px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: inline;
+      font-size: 18px;
+      border-radius: 32px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__text-button {
+    margin: 0 auto;
+    color: var(--color-primare-dark);
+    font-size: 12px;
+    width: 238px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0;
+    }
+  }
+}
+

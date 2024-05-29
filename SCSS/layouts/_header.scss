@@ -1,0 +1,73 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @media screen and (min-width: $bp-desktop) {
+    background: rgba(255, 255, 255, 0.25);                                  
+    backdrop-filter: blur(5px);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-grow: 1;
+  }
+  
+  &__address {
+    display: none;
+    
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 40px;
+    }
+  }
+  
+  &__logo {
+    padding: 32px 0;
+  }
+  
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+  
+  &__list {                                     
+    display: flex;
+    gap: 30px;
+    flex-grow: 1;
+  }
+
+  &__address-icon {
+    fill: var(--color-brand-dark);
+  }
+
+  &__burger {
+    width: 20px;
+    height: 14px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primare-light);
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}
+
+

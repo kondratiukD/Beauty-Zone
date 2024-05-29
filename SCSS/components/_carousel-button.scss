@@ -1,0 +1,26 @@
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-brand-dark); /* .carousel-arrow (наслідування) */
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-brand-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-brand-light);
+  fill: var(
+    --color-primare-light
+  ); /* .carousel-button:hover .carousel-arrow (наслідування) */
+  border: 1px solid var(--color-primare-light);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
+}

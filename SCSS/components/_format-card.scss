@@ -1,0 +1,40 @@
+.format-card {
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  
+  &__container {
+    position: relative;
+    display: flex;
+    height: 456px;
+    padding: 372px 77px 32px 115px;
+    color: var(--color-primare-light);
+    font-size: 22px;
+    font-weight: 400;
+    background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 0%,
+      rgba(1, 28, 68, 0.73) 72.58%,
+      var(--color-brand-dark) 100%
+    );
+    border: 1px solid lightgray;
+    border-radius: 4px 120px 4px 120px;
+    overflow: hidden;
+
+    @media screen and (min-width: $bp-tablet) {
+      
+    }
+  }
+  
+  &__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+

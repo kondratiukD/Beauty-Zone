@@ -1,0 +1,33 @@
+.input {
+  &__label {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+  }
+
+  &__control {
+    padding: 18px 32px;
+    width: 100%;
+    font-size: 13px;
+    border: 2px solid var(--color-secondary-light);
+    border-radius: 32px;
+    background-color: transparent;
+
+    &:focus {
+      background-color: var(--color-secondary-light);
+      outline: none;
+    }
+    
+    &::placeholder {
+      color: var(--color-primare-light);
+      font-size: 13px;
+    }
+  }
+}
+
+
+
+
+
+
+

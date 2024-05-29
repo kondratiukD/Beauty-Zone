@@ -1,0 +1,18 @@
+.section {
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      margin-bottom: 48px;
+      line-height: 1.2;
+    }
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}               

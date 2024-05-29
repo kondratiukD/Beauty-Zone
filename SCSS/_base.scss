@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-brand-dark);
+  font-family: 'Roboto', 'Play1', 'Play2', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  background-color: var(--color-primare-light);
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  color: var(--color-brand-dark);
+}
+
+h1 {
+  font-family: 'Play1', sans-serif;
+}
+
+h2 {
+  font-family: 'Play2', sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block; /* для того щоб блок не розтягувався на всю ширину */
+}

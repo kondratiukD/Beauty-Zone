@@ -1,0 +1,129 @@
+.footer {
+  position: relative;
+  padding: 56px;
+  background-color: var(--color-brand-dark);
+  background-image: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    position: relative;
+    padding: 56px;
+    background-color: var(--color-brand-dark);
+    background-image: url("../images/footer-background@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &::after {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+      display: block;
+      width: 247px;
+      height: 152px;
+      right: 0;
+      bottom: 0;
+      background-image: url("../images/pipette.png");
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 50%;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+     }
+  }
+  
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    margin-bottom: 42px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__menu-link {
+    color: var(--color-primare-light);
+    margin-bottom: 16px;
+  
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+  
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__address-list {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__address-link {
+    color: var(--color-primare-light);
+    margin-bottom: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-brand-light);
+      font-weight: 700px;
+    }
+  }
+
+  &__address-copyright {
+    color: var(--color-secondary-light);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
